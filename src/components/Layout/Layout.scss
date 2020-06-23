@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+$background: #14213d;
+$headingPrimary: #fca311;
+$headingSub: #e5e5e5;
+$contentPrimary: #fff;
+$dark: #000;
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $background;
+  color: $contentPrimary;
+}

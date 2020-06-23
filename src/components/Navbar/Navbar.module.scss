@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  list-style-type: none;
+  font-size: 12vw;
+  justify-content: flex-start;
+  padding: 2vh 2vw;
+  align-items: center;
+}
+
+.bordered {
+  border: 0.2rem solid #fff;
+  padding: 0.5rem 0.6rem;
+}
+
+.navItem {
+  text-decoration: none;
+  margin-right: 3vw;
+}
+
+#projects {
+  margin-left: auto;
+}
+
+@media (min-width: 600px) {
+  .navbar {
+    font-size: 5vw;
+  }
+}
