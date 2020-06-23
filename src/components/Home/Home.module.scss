@@ -1,0 +1,80 @@
+$headingPrimary: #fca311;
+$headingSub: #e5e5e5;
+
+.heading,
+.heading__greeting,
+.heading__greeting--bold {
+  color: $headingPrimary;
+  font-size: 5vw;
+}
+
+.heading {
+  margin-top: 4vh;
+  text-align: center;
+}
+
+.heading__greeting {
+  font-family: Rock Salt;
+  font-size: 8vw;
+}
+
+.heading__greeting--bold {
+  font-size: 5vw;
+  font-weight: bold;
+}
+
+.home__content__developer {
+  margin-top: 10vh;
+}
+
+.home__content__about {
+  padding: 0 8%;
+
+  .home__content__about__header {
+    font-size: 6vw;
+    font-weight: bold;
+    color: $headingPrimary;
+  }
+
+  .home__content__about__content {
+    font-size: 5vw;
+    margin-top: 1vh;
+  }
+}
+
+@media (min-width: 600px) {
+  .heading,
+  .heading__greeting,
+  .heading__greeting--bold {
+    font-size: 3vw;
+  }
+
+  .home__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .home__content__developer {
+    margin: 0;
+    width: 36%;
+  }
+
+  .home__content__about {
+    font-size: 1.5vw;
+    width: 40%;
+    padding: 0;
+
+    .home__content__about__header {
+      font-size: 2vw;
+      font-weight: bold;
+      color: $headingPrimary;
+    }
+
+    .home__content__about__content {
+      font-size: 1.2vw;
+      width: 85%;
+      padding-left: 0.5vw;
+    }
+  }
+}
