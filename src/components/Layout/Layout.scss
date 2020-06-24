@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rock+Salt&display=swap");
 
 $background: #14213d;
 $headingPrimary: #fca311;
@@ -14,4 +14,17 @@ $dark: #000;
   padding: 0;
   background-color: $background;
   color: $contentPrimary;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
 }

@@ -1,15 +1,19 @@
+$headingPrimary: #fca311;
+
 .navbar {
   display: flex;
   list-style-type: none;
   font-size: 12vw;
   justify-content: flex-start;
-  padding: 2vh 2vw;
+  padding: 2vh 2.5vw;
   align-items: center;
 }
 
 .bordered {
-  border: 0.2rem solid #fff;
-  padding: 0.5rem 0.6rem;
+  border: 0.2rem solid $headingPrimary;
+  padding: 0 1.5rem;
+  font-family: Rock Salt;
+  text-align: center;
 }
 
 .navItem {
@@ -23,6 +27,6 @@
 
 @media (min-width: 600px) {
   .navbar {
-    font-size: 5vw;
+    font-size: 3vw;
   }
 }
