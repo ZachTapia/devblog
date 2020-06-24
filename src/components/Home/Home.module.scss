@@ -9,7 +9,7 @@ $headingSub: #e5e5e5;
 }
 
 .heading {
-  margin-top: 4vh;
+  margin: 4vh 0;
   text-align: center;
 }
 
@@ -39,6 +39,7 @@ $headingSub: #e5e5e5;
   .home__content__about__content {
     font-size: 5vw;
     margin-top: 1vh;
+    line-height: 1.5;
   }
 }
 
@@ -46,7 +47,7 @@ $headingSub: #e5e5e5;
   .heading,
   .heading__greeting,
   .heading__greeting--bold {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 
   .home__content {
@@ -72,7 +73,7 @@ $headingSub: #e5e5e5;
     }
 
     .home__content__about__content {
-      font-size: 1.2vw;
+      font-size: 1.1vw;
       width: 85%;
       padding-left: 0.5vw;
     }

@@ -15,3 +15,16 @@ $dark: #000;
   background-color: $background;
   color: $contentPrimary;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}

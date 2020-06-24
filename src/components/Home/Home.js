@@ -11,11 +11,6 @@ const Home = () => {
       </div>
 
       <div className={homeStyles.home__content}>
-        <img
-          className={homeStyles.home__content__developer}
-          src={Developer}
-          alt="javascript developer"
-        />
         <div className={homeStyles.home__content__about}>
           <div className={homeStyles.home__content__about__header}>
             About Me
@@ -38,6 +33,11 @@ const Home = () => {
             playing guitar, and fishing with my wife.
           </div>
         </div>
+        <img
+          className={homeStyles.home__content__developer}
+          src={Developer}
+          alt="javascript developer"
+        />
       </div>
     </>
   )
