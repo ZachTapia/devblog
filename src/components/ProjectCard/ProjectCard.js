@@ -1,24 +1,56 @@
-import React from "react"
+import React, { useState } from "react"
 import projectCardStyles from "./ProjectCard.module.scss"
 import Pomodoit from "../../images/pomodoro.gif"
 
-const ProjectCard = ({ projectTitle }) => {
+const ProjectCard = ({ projectTitle, liveLink, githubLink }) => {
+  const [flipped, setFlipped] = useState(false)
+
+  const toggleFlip = () => {
+    setFlipped(prevState => !prevState)
+  }
+
+  console.log(flipped)
+
   return (
-    <div className={projectCardStyles.projectCard}>
-      <div className={projectCardStyles.projectCard__header}>
-        <div className={projectCardStyles.projectCard__header__title}>
-          {projectTitle}
+    <div className={projectCardStyles.projectCardContainer}>
+      <div
+        className={
+          flipped
+            ? projectCardStyles.projectCardFlipped
+            : projectCardStyles.projectCard
+        }
+      >
+        <div className={projectCardStyles.projectCardFront}>
+          <img
+            className={projectCardStyles.projectCard__image}
+            src={Pomodoit}
+            alt="pomodoro project"
+          />
+          <div className={projectCardStyles.projectCard__title}>
+            {projectTitle}
+          </div>
+          <div className={projectCardStyles.projectCard__divider}></div>
+          <div className={projectCardStyles.projectCard__content}>
+            <div className={projectCardStyles.projectCard__content__item}>
+              <a href={liveLink} target="__blank">
+                Live
+              </a>
+            </div>
+            <div className={projectCardStyles.projectCard__content__item}>
+              <a href={githubLink} target="__blank">
+                Github
+              </a>
+            </div>
+            <div
+              className={projectCardStyles.projectCard__content__item}
+              onClick={toggleFlip}
+            >
+              Details
+            </div>
+          </div>
         </div>
-      </div>
-      <div className={projectCardStyles.projectCard__body}>
-        <img src={Pomodoit} alt="pomodoit preview" />
-        <div className={projectCardStyles.projectCard__body__content}>
-          <div className={projectCardStyles.projectCard__body__content__item}>
-            React Next.js
-          </div>
-          <div className={projectCardStyles.projectCard__body__content__item}>
-            Github Live
-          </div>
+        <div className={projectCardStyles.projectCardBack} onClick={toggleFlip}>
+          The Back of Card
         </div>
       </div>
     </div>

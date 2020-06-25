@@ -7,7 +7,11 @@ const Projects = () => {
   return (
     <Layout>
       <ProjectsHeader />
-      <ProjectCard projectTitle="Pomodo-It" />
+      <ProjectCard
+        projectTitle="Pomodo-It"
+        liveLink="https://pomodoit.now.sh/"
+        githubLink="https://github.com/ZachTapia/pomodoro"
+      />
     </Layout>
   )
 }

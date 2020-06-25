@@ -12,11 +12,11 @@ $dark: #000;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: $background;
   color: $contentPrimary;
 }
 
 body {
+  background-color: $background;
   display: flex;
   flex-direction: column;
 }
