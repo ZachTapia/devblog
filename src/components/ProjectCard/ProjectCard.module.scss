@@ -83,3 +83,30 @@ $dark: #181818;
     text-decoration: none;
   }
 }
+
+@media (min-width: 600px) {
+  .project-card-container {
+    height: 40vh;
+    max-width: 20vw;
+  }
+
+  .project-card-front {
+    font-size: 1vw;
+  }
+
+  .project-card-back {
+    font-size: 1vw;
+  }
+
+  .project-card__title {
+    font-size: 1.5vw;
+    margin: 3% 3%;
+  }
+
+  .project-card__content {
+    .project-card__content__item,
+    a {
+      font-size: 1.5vw;
+    }
+  }
+}
