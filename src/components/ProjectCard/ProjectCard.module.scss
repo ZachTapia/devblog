@@ -7,7 +7,7 @@ $dark: #181818;
 // This is what sets the size of the card
 .project-card-container {
   position: relative;
-  height: 35vh;
+  height: 40vh;
   max-width: 80vw;
   margin: 0 auto;
 }
@@ -30,6 +30,7 @@ $dark: #181818;
 }
 
 .project-card-front {
+  border-radius: 5%;
   font-size: 50px;
   position: absolute;
   width: 100%;
@@ -39,18 +40,23 @@ $dark: #181818;
 }
 
 .project-card-back {
-  font-size: 50px;
+  border-radius: 5%;
+  font-size: 4vw;
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   transform: rotateY(180deg);
   background-color: $dark;
+  padding: 7.5% 5%;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .project-card__image {
   max-height: 50%;
-  width: 100%;
+  width: 90%;
+  margin: 5% 5% 0;
 }
 
 .project-card__title {

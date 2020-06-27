@@ -50,7 +50,11 @@ const ProjectCard = ({ projectTitle, liveLink, githubLink }) => {
           </div>
         </div>
         <div className={projectCardStyles.projectCardBack} onClick={toggleFlip}>
-          The Back of Card
+          PomoDo-it is a productivity timer built using React.js (Hooks) and
+          Next.js. PomoDo-it implements the Pomodoro Technique to boost
+          productivity and focus. When faced with a large task or series of
+          tasks, PomoDo-it breaks down the work into short focused sprints
+          (called "pomodoros").
         </div>
       </div>
     </div>
