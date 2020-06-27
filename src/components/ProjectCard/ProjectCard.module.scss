@@ -1,0 +1,112 @@
+$background: #14213d;
+$headingPrimary: #fca311;
+$headingSub: #e5e5e5;
+$contentPrimary: #fff;
+$dark: #181818;
+
+// This is what sets the size of the card
+.project-card-container {
+  position: relative;
+  height: 40vh;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.project-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.project-card-flipped {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in;
+  transform: rotateY(180deg);
+}
+
+.project-card-front {
+  border-radius: 5%;
+  font-size: 50px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: $dark;
+}
+
+.project-card-back {
+  border-radius: 5%;
+  font-size: 4vw;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background-color: $dark;
+  padding: 7.5% 5%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.project-card__image {
+  max-height: 50%;
+  width: 90%;
+  margin: 5% 5% 0;
+}
+
+.project-card__title {
+  font-size: 6vw;
+  font-weight: bold;
+  color: $headingPrimary;
+  margin: 3% 3%;
+}
+
+.project-card__divider {
+  height: 1px;
+  background-color: #3f3f3f;
+}
+
+.project-card__content {
+  display: flex;
+  height: 30%;
+  justify-content: space-around;
+  align-items: center;
+  .project-card__content__item,
+  a {
+    font-size: 6vw;
+    color: #a0bdfc;
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .project-card-container {
+    height: 40vh;
+    max-width: 20vw;
+  }
+
+  .project-card-front {
+    font-size: 1vw;
+  }
+
+  .project-card-back {
+    font-size: 1vw;
+  }
+
+  .project-card__title {
+    font-size: 1.5vw;
+    margin: 3% 3%;
+  }
+
+  .project-card__content {
+    .project-card__content__item,
+    a {
+      font-size: 1.5vw;
+    }
+  }
+}

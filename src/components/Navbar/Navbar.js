@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link
             className={navbarStyles.navItem}
             id={navbarStyles.projects}
-            to="/"
+            to="/projects"
           >
             <li>Projects</li>
           </Link>
