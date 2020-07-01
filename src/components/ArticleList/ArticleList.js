@@ -15,6 +15,9 @@ const ArticleList = () => {
             }
             timeToRead
             excerpt(pruneLength: 120)
+            fields {
+              slug
+            }
           }
         }
       }
@@ -31,6 +34,7 @@ const ArticleList = () => {
             datePosted={edge.node.frontmatter.date}
             articlePreview={edge.node.excerpt}
             timeToRead={edge.node.timeToRead}
+            link={edge.node.fields.slug}
           />
         </>
       ))}
