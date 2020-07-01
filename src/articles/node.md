@@ -1,5 +1,5 @@
 ---
-title: "Gatsby"
+title: "Node"
 date: "June 30th, 2020"
 ---
 
