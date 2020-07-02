@@ -1,0 +1,53 @@
+$headingPrimary: #fca311;
+$headingSub: #b6b6b6;
+$content: #e5e5e5;
+
+.article__title {
+  font-size: 10vw;
+  color: $headingPrimary;
+  font-weight: bold;
+  padding: 5vh 3vw 0;
+  text-align: center;
+}
+
+.article__author,
+.article__date {
+  text-align: center;
+  font-size: 4vw;
+  color: $headingSub;
+  padding: 0 6vw;
+}
+
+.article__content {
+  margin-top: 5vh;
+  color: $content;
+
+  p {
+    text-indent: 5vw;
+    font-family: Montserrat;
+    font-size: 4.5vw;
+    padding: 2vh 5vw;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 600px) {
+  .article__title {
+    font-size: 4vw;
+    padding: 5vh 4vw 0;
+    text-align: left;
+  }
+
+  .article__author,
+  .article__date {
+    font-size: 1.3vw;
+    padding: 0 5vw;
+    text-align: left;
+  }
+
+  .article__content {
+    p {
+      font-size: 1.8vw;
+    }
+  }
+}

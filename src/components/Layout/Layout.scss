@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Rock+Salt&family=Montserrat&display=swap");
 
 $background: #14213d;
 $headingPrimary: #fca311;
@@ -17,8 +17,11 @@ $dark: #000;
 
 body {
   background-color: $background;
+}
+.all {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .content {
@@ -27,4 +30,5 @@ body {
 
 .footer {
   flex-shrink: 0;
+  margin-top: auto;
 }

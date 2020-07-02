@@ -1,7 +1,5 @@
-$background: #14213d;
 $headingPrimary: #fca311;
 $headingSub: #e5e5e5;
-$contentPrimary: #fff;
 $dark: #181818;
 
 // This is what sets the size of the card
@@ -40,6 +38,7 @@ $dark: #181818;
 }
 
 .project-card-back {
+  font-family: Montserrat;
   border-radius: 5%;
   font-size: 4vw;
   position: absolute;
