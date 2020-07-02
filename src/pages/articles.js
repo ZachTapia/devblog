@@ -4,7 +4,7 @@ import PageHeader from "../components/PageHeader/PageHeader"
 import ArticleList from "../components/ArticleList/ArticleList"
 
 const Articles = () => {
-  const headerContent = "Here are some things that I'd like share with you"
+  const headerContent = ""
 
   return (
     <Layout>
