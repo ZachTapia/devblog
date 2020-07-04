@@ -2,6 +2,8 @@ import React from "react"
 import "./Layout.scss"
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader"
+deckDeckGoHighlightElement()
 
 const Layout = ({ children }) => {
   return (

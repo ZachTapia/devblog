@@ -19,35 +19,84 @@ $content: #e5e5e5;
 }
 
 .article__content {
+  --deckgo-highlight-code-font-size: calc(30em + 0.5vw);
   margin-top: 5vh;
   color: $content;
+  padding: 2vh 5vw;
 
   p {
     text-indent: 5vw;
     font-family: Montserrat;
     font-size: 4.5vw;
-    padding: 2vh 5vw;
     line-height: 1.5;
+  }
+
+  strong {
+    font-size: 4.7vw;
+  }
+
+  code {
+    font-size: 4vw;
+    background-color: lightgray;
+    color: black;
+    padding: 0 4px;
+    border-radius: 4px;
+  }
+
+  h3 {
+    font-size: 6vw;
+    margin: 5vh 0 2vh;
+  }
+
+  ul {
+    li {
+      font-family: Montserrat;
+      font-size: 4vw;
+      line-height: 1.5;
+    }
+    margin: 2vw 7vw 2vw;
   }
 }
 
 @media (min-width: 600px) {
   .article__title {
     font-size: 4vw;
-    padding: 5vh 4vw 0;
+    padding: 5vh 12vw 0;
     text-align: left;
   }
 
   .article__author,
   .article__date {
     font-size: 1.3vw;
-    padding: 0 5vw;
+    padding: 0 14vw;
     text-align: left;
   }
 
   .article__content {
+    max-width: 75%;
+    margin: 5vh auto 0;
+
     p {
-      font-size: 1.8vw;
+      font-size: 1.3vw;
+      text-indent: 3vw;
+    }
+
+    strong {
+      font-size: 1.5vw;
+    }
+
+    code {
+      font-size: 1.3vw;
+    }
+
+    h3 {
+      font-size: 2vw;
+    }
+
+    ul {
+      li {
+        font-size: 1.2vw;
+      }
     }
   }
 }
