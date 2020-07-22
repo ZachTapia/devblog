@@ -6,8 +6,8 @@ $dark: #181818;
 .project-card-container {
   position: relative;
   height: 40vh;
-  max-width: 80vw;
-  margin: 0 auto;
+  width: 80vw;
+  margin: 3vh 0;
 }
 
 .project-card {
@@ -86,7 +86,8 @@ $dark: #181818;
 @media (min-width: 600px) {
   .project-card-container {
     height: 40vh;
-    max-width: 20vw;
+    max-width: 25vw;
+    margin: 0 1.5vw;
   }
 
   .project-card-front {

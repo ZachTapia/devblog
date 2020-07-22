@@ -1,15 +1,19 @@
 import React, { useState } from "react"
 import projectCardStyles from "./ProjectCard.module.scss"
-import Pomodoit from "../../images/pomodoro.gif"
+import Img from "gatsby-image"
 
-const ProjectCard = ({ projectTitle, liveLink, githubLink }) => {
+const ProjectCard = ({
+  projectTitle,
+  liveLink,
+  githubLink,
+  cardBack,
+  image,
+}) => {
   const [flipped, setFlipped] = useState(false)
 
   const toggleFlip = () => {
     setFlipped(prevState => !prevState)
   }
-
-  console.log(flipped)
 
   return (
     <div className={projectCardStyles.projectCardContainer}>
@@ -21,10 +25,10 @@ const ProjectCard = ({ projectTitle, liveLink, githubLink }) => {
         }
       >
         <div className={projectCardStyles.projectCardFront}>
-          <img
+          <Img
             className={projectCardStyles.projectCard__image}
-            src={Pomodoit}
-            alt="pomodoro project"
+            fluid={image.fluid}
+            alt="project image"
           />
           <div className={projectCardStyles.projectCard__title}>
             {projectTitle}
@@ -50,11 +54,7 @@ const ProjectCard = ({ projectTitle, liveLink, githubLink }) => {
           </div>
         </div>
         <div className={projectCardStyles.projectCardBack} onClick={toggleFlip}>
-          PomoDo-it is a productivity timer built using React.js (Hooks) and
-          Next.js. PomoDo-it implements the Pomodoro Technique to boost
-          productivity and focus. When faced with a large task or series of
-          tasks, PomoDo-it breaks down the work into short focused sprints
-          (called "pomodoros").
+          {cardBack}
         </div>
       </div>
     </div>
