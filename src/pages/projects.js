@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout/Layout"
 import PageHeader from "../components/PageHeader/PageHeader"
-import ProjectCard from "../components/ProjectCard/ProjectCard"
+import ProjectList from "../components/ProjectList/ProjectList"
 
 const Projects = () => {
   const headerContent =
@@ -10,11 +10,8 @@ const Projects = () => {
   return (
     <Layout>
       <PageHeader headerTitle="Projects" headerContent={headerContent} />
-      <ProjectCard
-        projectTitle="Pomodo-It"
-        liveLink="https://pomodoit.now.sh/"
-        githubLink="https://github.com/ZachTapia/pomodoro"
-      />
+
+      <ProjectList />
     </Layout>
   )
 }
