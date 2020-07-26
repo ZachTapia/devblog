@@ -29,7 +29,7 @@
 }
 
 .article-card__title {
-  font-size: 8vw;
+  font-size: 6.5vw;
   color: #1d1d1d;
   font-weight: bold;
   padding-left: 5%;
@@ -53,11 +53,12 @@
 @media (min-width: 600px) {
   .wrapper {
     max-width: 30%;
-    height: 35vh;
+    height: 40vh;
+    max-height: 385px;
   }
 
   .article-card__title {
-    font-size: 2.25vw;
+    font-size: 2vw;
   }
 
   .article-card__author,
