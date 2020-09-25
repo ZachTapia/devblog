@@ -20,16 +20,12 @@ const ProjectList = () => {
   return (
     <div className={styles.projectList}>
       <ProjectCard
-        projectTitle="PomoDo-It"
-        liveLink="https://pomodoit.now.sh/"
-        githubLink="https://github.com/ZachTapia/pomodoro"
-        cardBack="PomoDo-it is a productivity timer built using React.js (Hooks) and
-        Next.js. PomoDo-it implements the Pomodoro Technique to boost
-        productivity and focus. When faced with a large task or series of
-        tasks, PomoDo-it breaks down the work into short focused sprints
-        (called 'pomodoros')."
+        projectTitle="Your Passion Podcast"
+        liveLink="https://yourpassionpodcast.com"
+        githubLink="https://github.com/ZachTapia/yourpassionpodcast"
+        cardBack="Your Passion Podcast is a podcast hosted by Ryan Kotob that brings viewers the opportunity to get insight & knowledge from industry professionals in topics such as Music Production, Business and many others. "
         image={allImages.allImageSharp.nodes.find(node =>
-          node.fluid.originalName === "pomodoit.png" ? node : null
+          node.fluid.originalName === "podcast.png" ? node : null
         )}
       />
       <ProjectCard
@@ -39,6 +35,19 @@ const ProjectList = () => {
         cardBack="Christine Tapia Real Estate is a website created using React.js and Gatsby. This was a special project for me, as it was a business website for my mother. I've always known I wanted to make her one, and here it finally is! Check it out if you have time!"
         image={allImages.allImageSharp.nodes.find(node =>
           node.fluid.originalName === "christine.png" ? node : null
+        )}
+      />
+      <ProjectCard
+        projectTitle="PomoDo-It"
+        liveLink="https://pomodoit.now.sh/"
+        githubLink="https://github.com/ZachTapia/pomodoro"
+        cardBack="PomoDo-it is a productivity timer built using React.js (Hooks) and
+            Next.js. PomoDo-it implements the Pomodoro Technique to boost
+            productivity and focus. When faced with a large task or series of
+            tasks, PomoDo-it breaks down the work into short focused sprints
+            (called 'pomodoros')."
+        image={allImages.allImageSharp.nodes.find(node =>
+          node.fluid.originalName === "pomodoit.png" ? node : null
         )}
       />
     </div>
